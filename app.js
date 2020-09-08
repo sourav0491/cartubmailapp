@@ -47,7 +47,7 @@ async function sendMail(user, callback) {
   let mailOptions = {
     to: maillist,
     subject: "New Message Posted by Contact", // Subject line
-    html: `<h4>There is a new message posted on the website by ${user.name} from email ${user.email}</h4>
+    html: `<h4>There is a new message posted on the website by ${user.name} from email ${user.email} and mobile number ${user.mobile}</h4>
     <h4> The message is  - ${user.message}</h4>`
   };
 
